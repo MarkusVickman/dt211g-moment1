@@ -1,0 +1,62 @@
+body{
+    text-align: center;
+}
+
+header{
+    border-color: black;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+}
+
+header li{
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    padding: 5px;
+    font-size: 1.2em;
+    position: absolute;
+    right: 50px;
+    top:20px;
+}
+
+#btn-close{
+    display: none;
+}
+
+
+
+
+.text {
+    width: 100%;
+    max-width: 550px;
+    line-height: 1.5;
+}
+
+main li {
+    text-align: left;
+    margin: 10px;
+}
+
+@media (min-width: 600px){
+    .text {
+        transform: translate(-50%);
+        margin-left: 50%;
+    }
+
+    #btn-close, #btn-open{
+        display: none;
+    }
+
+    header li{
+        display: inline-block;
+        margin-right: 30px;
+    }
+    
+
+}

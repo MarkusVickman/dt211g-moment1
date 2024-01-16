@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Startsida</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Testar igen att skapa i och pusha till developer branch</h1>
-    
+    <header>
+        <button id="btn-open"><img src="svg/menu_open.svg"> Meny</button>
+        <nav>
+            <button id="btn-close"><img src="svg/menu_close.svg"> Close</button>
+            <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="pictures.html">Bilder</a></li>
+            <li><a href="about.html">Om Webbplatsen</a></li>
+        </ul></nav>
+    </header>
+    <main class="text">
+    <h1>Automatisering & publicering</h1>
+    <p>Den här uppgiften ingår i moment 1 i kursen dt211g - Frontend-baserad webbutveckling. Uppgiften går ut på att publicera 
+        en webbplats på en publiceringwebbhost. Med hjälp av paketet parcel i NodeJs ska uppgifter automatiseras. Det som ska 
+    automatiseras är följande:</p>
+    <ul><li>Minifiera CSS-koden</li>
+        <li>Transpilera och minifiera JavaScript-koden</li>
+        <li>Minifiera HTML-koden</li>
+        <li>Bildoptimering till olika format</li>
+        <li>JavaScript-koden Transpileras för kompabilitet</li>
+        <li>Optimerade arbetsfiler kopieras till publiceringsmapp</li>    
+    </ul>
+    <p>Sidan innehåller dessutom innehålla två undersidor. En om min arbetsprocess och en med fem optimerade bilder.</p>
+</main>
 </body>
 </html>
