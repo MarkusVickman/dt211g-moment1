@@ -2,11 +2,12 @@
   "name": "parcel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "Start": "parcel",
+    "build": "parcel build"
   },
-  "author": "",
+  "author": "Markus Vickman",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.11.0"
