@@ -29,6 +29,7 @@ header ul{
 header li{
     list-style: none;
     color:white;
+    font-size: 1.2em;
 }
 
 .menu-link:hover{
@@ -153,7 +154,7 @@ footer{
 
     header ul{
         margin-top: 35px;
-        margin-left: 60px;
+        margin-left: 80px;
     }
 
     nav{
