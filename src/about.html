@@ -12,37 +12,69 @@
 
 <body>
     <header>
-        <a href="index.html"><div class="logo"><img width="200" height="100" src="pictures/Automation-logos_white.png?width200" alt="logotyp med texten Automation"></div></a>
+        <a href="index.html">
+            <div class="logo"><img width="200" height="100" src="pictures/Automation-logos_white.png?width200"
+                    alt="logotyp med texten Automation"></div>
+        </a>
         <button id="btn-open"><img src="svg/menu_open.svg" alt="Öppna menyknappen"></button>
         <nav id="main-nav">
             <button id="btn-close"><img src="svg/menu_close.svg" alt="Stänga menyknappen"></button>
             <ul>
                 <li><a href="index.html" class="menu-link">Startsida</a></li>
                 <li><a href="pictures.html" class="menu-link">Bilder</a></li>
-                <li><a href="about.html" class="menu-link">Om Webbplatsen</a></li>
+                <li><a href="about.html" class="menu-link" id="menu-underline">Arbetsprocessen</a></li>
             </ul>
         </nav>
     </header>
     <main class="text">
-        <h1>Automatisering & publicering</h1>
-        <p>Den här uppgiften ingår i moment 1 i kursen dt211g - Frontend-baserad webbutveckling. Uppgiften går ut på att
-            publicera
-            en webbplats på en publiceringwebbhost. Med hjälp av paketet parcel i NodeJs ska uppgifter automatiseras.
-            Det som ska
-            automatiseras är följande:</p>
+        <h1>Arbetsprocessen</h1>
+        <p>Som verktyg för att skapa den här webbplatsen använde jag en dator med windows 11 där programmen Visual
+            Studio Code, Git och NodeJS med pakethanteraren NPM
+            är installerat. För att remote versionshantera och för hjälp vid publisering användes GitHub och den är
+            publiserad på Netlify.
+        </p>
+        <p>Jag började med att initiera ett nytt NPM projekt. För att göra det navigerade jag till min tänkta
+            projektmapp i kommandotolken
+            och skrev kommandot "npm init". Då skapades en konfigurationsfil med namnet package.json. Sen skrev jag "npm
+            install parcel --save-dev" för att
+            installare paketet parcel till mitt projekt för developer-läget. I projektmappen skapade jag en fil med
+            namnet .gitignore för att
+            utesluta mapparna node_modules, dist och parcel-cache för att de inte ska versionshanteras med git. En
+            GitHub remote repositorie
+            anslöts och förgreningen developer skapades och aktiverades i Visual Studio Code. Filen
+            med namnet sharp.config.json skapades
+            för att ställa kvaliten för bilder till 70. Jag skapade mappen src för att ha källkod och alla
+            orginalfiler i och i den skapade jag mappar
+            för varje filtyp som skulle vara med till webbplatsen, css, js, pictures och svg.</p>
+        <p>
+            Webbplatsen skrevs i html, css och JavaScript med hjälp av Visual Studio Code. JavaScript används enbart
+            till mobilmenyn.
+            Jag fotograferade fem foton på min kaffehörna. I html-koden till bildersidan skapade jag en picture-tagg för
+            varje bild.
+            Här användes srcset och img-taggen för att både kunna använda modern och äldre standard för bilder. Eftersom
+            att jag ville visa bilden
+            i 600px bredd med formatet webp skrev jag "source srcset="pictures/filter.jpeg?as=webp&width=600"
+            type="image/webp"". Då konverteras och
+            komprimeras bilden automatiskt när paketet parcel körs. För min backup använde jag koden "img
+            src="pictures/filter.jpeg?width=600" width="600"".
+        </p>
+        <p>
+            När webbplatsen var klar merchade jag mina Git-förgreningar så att projecten även hamnade i main förgreningen som skulle publiseras. Eftersom 
+            att mitt GitHub-konto redan var kopplat till Netlify var det bara att leta reda på projektet på Netlifys webbplats. Jag valde projektet 
+            och skrev in byggkommandot "npm run build" och tryckte deploy. 
+        </p>
+        <h2>De här optimeringarna gjorde parcel vid publicering</h2>
         <ul>
             <li>Minifiera CSS-koden</li>
             <li>Transpilera och minifiera JavaScript-koden</li>
             <li>Minifiera HTML-koden</li>
-            <li>Bildoptimering till olika format</li>
+            <li>Komprimering och bildoptimering till olika format</li>
             <li>JavaScript-koden Transpileras för kompabilitet</li>
             <li>Optimerade arbetsfiler kopieras till publiceringsmapp</li>
         </ul>
-        <p>Sidan innehåller dessutom innehålla två undersidor. En om min arbetsprocess och en med fem optimerade bilder.
-        </p>
     </main>
     <footer>
-        <a href="about.html" class="menu-link">Om Webbplatsen</a>
+        <a href="about.html" class="menu-link">Arbetsprocessen</a>
     </footer>
 </body>
 
