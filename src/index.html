@@ -1,35 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startsida</title>
     <link rel="stylesheet" href="css/style.css">
+    <!--Länk till javascript mobilmeny-->
+    <script src="mobile_menu.js" defer></script>
 </head>
+
 <body>
     <header>
-        <button id="btn-open"><img src="svg/menu_open.svg"> Meny</button>
-        <nav>
-            <button id="btn-close"><img src="svg/menu_close.svg"> Close</button>
+        <div class="logo"><img width="200" height="100" src="pictures/Automation-logos_white.png"></div>
+        <button id="btn-open"><img src="svg/menu_open.svg"></button>
+        <nav id="main-nav">
+            <button id="btn-close"><img src="svg/menu_close.svg"></button>
             <ul>
-            <li><a href="index.html">Startsida</a></li>
-            <li><a href="pictures.html">Bilder</a></li>
-            <li><a href="about.html">Om Webbplatsen</a></li>
-        </ul></nav>
+                <li><a href="index.html" class="menu-link">Startsida</a></li>
+                <li><a href="pictures.html" class="menu-link">Bilder</a></li>
+                <li><a href="about.html" class="menu-link">Om Webbplatsen</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="text">
-    <h1>Automatisering & publicering</h1>
-    <p>Den här uppgiften ingår i moment 1 i kursen dt211g - Frontend-baserad webbutveckling. Uppgiften går ut på att publicera 
-        en webbplats på en publiceringwebbhost. Med hjälp av paketet parcel i NodeJs ska uppgifter automatiseras. Det som ska 
-    automatiseras är följande:</p>
-    <ul><li>Minifiera CSS-koden</li>
-        <li>Transpilera och minifiera JavaScript-koden</li>
-        <li>Minifiera HTML-koden</li>
-        <li>Bildoptimering till olika format</li>
-        <li>JavaScript-koden Transpileras för kompabilitet</li>
-        <li>Optimerade arbetsfiler kopieras till publiceringsmapp</li>    
-    </ul>
-    <p>Sidan innehåller dessutom innehålla två undersidor. En om min arbetsprocess och en med fem optimerade bilder.</p>
-</main>
+        <h1>Automatisering & publicering</h1>
+        <p>Den här uppgiften ingår i moment 1 i kursen dt211g - Frontend-baserad webbutveckling. Uppgiften går ut på att
+            publicera
+            en webbplats på en publiceringwebbhost. Med hjälp av paketet parcel i NodeJs ska uppgifter automatiseras.
+            Det som ska
+            automatiseras är följande:</p>
+        <ul>
+            <li>Minifiera CSS-koden</li>
+            <li>Transpilera och minifiera JavaScript-koden</li>
+            <li>Minifiera HTML-koden</li>
+            <li>Bildoptimering till olika format</li>
+            <li>JavaScript-koden Transpileras för kompabilitet</li>
+            <li>Optimerade arbetsfiler kopieras till publiceringsmapp</li>
+        </ul>
+        <p>Sidan innehåller dessutom innehålla två undersidor. En om min arbetsprocess och en med fem optimerade bilder.
+        </p>
+    </main>
+    <footer>
+        <a href="about.html" class="menu-link">Om Webbplatsen</a>
+    </footer>
 </body>
+
 </html>

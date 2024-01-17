@@ -1,40 +1,103 @@
 body{
     text-align: center;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+main{
+    margin-top: 130px;
+    border-color: white;
 }
 
 header{
-    border-color: black;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
     border-style: solid;
-    border-width: 0 0 2px 0;
+    border-width: 0 0 1px 0;
+}
+
+header ul{
+    padding: 0;
 }
 
 header li{
     list-style: none;
+    color:white;
 }
 
-header a{
+.menu-link:hover{
+    background-color: rgb(0, 144, 192);
+}
+
+.menu-link{
     text-decoration: none;
-    color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
 }
 
 button{
-    padding: 5px;
+    width: 45px;
+    height: 45px;
     font-size: 1.2em;
     position: absolute;
-    right: 50px;
-    top:20px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+
+
+
+button:hover{
+    background-color: rgb(0, 144, 192);
+}
+
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.logo:hover{
+    background-color: rgb(0, 144, 192);
+    border-radius: 10px;
 }
 
 #btn-close{
+    padding-top: 3px;
+    transform: translate(-50%);
+    margin-right: 50%;
+    top: 180px;
+}
+
+#btn-open{
+    display: block;
+    padding: 2px 4px 2px 4px;
+    right: 50px;
+    top:25px;
+}
+
+nav{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
     display: none;
 }
 
 
-
-
 .text {
     width: 100%;
-    max-width: 550px;
+    max-width: 600px;
     line-height: 1.5;
 }
 
@@ -43,7 +106,22 @@ main li {
     margin: 10px;
 }
 
-@media (min-width: 600px){
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: white;
+    margin-top: 30px;
+    padding-left: 0;
+    margin-left: 0;
+    display: block;
+}
+
+@media (min-width: 700px){
     .text {
         transform: translate(-50%);
         margin-left: 50%;
@@ -55,8 +133,30 @@ main li {
 
     header li{
         display: inline-block;
-        margin-right: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
-    
+
+    header ul{
+        margin-top: 35px;
+    }
+
+    nav{
+        display: block;
+        height: 100px;
+    }
+
+    .logo{
+        z-index: 3;
+    }
+
+    .menu-link{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        display: block;
+    }
+
 
 }
